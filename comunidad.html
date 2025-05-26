@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Shoes © - Comunidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Elite Shoes ©</header>
+    <nav>
+        <a href="index.html"><i>Inicio</i></a>
+        <a href="empresa.html"><i>Empresa</i></a>
+        <a href="tenis.html"><i>Tenis</i></a>
+        <a href="zapatos.html"><i>Zapatos</i></a>
+        <a href="carrito.html"><i>Carrito</i></a>
+        <a href="ubicacion.html"><i>Ubicación</i></a>
+        <a href="atencion.html"><i>Atención a Clientes</i></a>
+    </nav>
+
+    <section class="comentarios">
+        <h2>Opiniones de la Comunidad</h2>
+        <div id="lista-comentarios">
+            <div class="comentario">
+                <p><strong>Usuario:</strong> Juan Pérez</p>
+                <p>Me encantó la comodidad de los tenis, los usaré para correr.</p>
+                <button onclick="darLike(0)">👍 Like</button>
+                <button onclick="darDislike(0)">👎 Dislike</button>
+                <button onclick="responder(0)">Responder</button>
+            </div>
+            <div class="comentario">
+                <p><strong>Usuario:</strong> María Rodríguez</p>
+                <p>Están increíbles, el diseño es súper moderno.</p>
+                <button onclick="darLike(1)">👍 Like</button>
+                <button onclick="darDislike(1)">👎 Dislike</button>
+                <button onclick="responder(1)">Responder</button>
+            </div>
+            <div class="comentario">
+                <p><strong>Usuario:</strong> Carlos Gómez</p>
+                <p>Buena calidad, llegaron rápido. Recomendado!</p>
+                <button onclick="darLike(2)">👍 Like</button>
+                <button onclick="darDislike(2)">👎 Dislike</button>
+                <button onclick="responder(2)">Responder</button>
+            </div>
+            <div class="comentario">
+                <p><strong>Usuario:</strong> Sofía Martínez</p>
+                <p>Son muy ligeros, ideales para entrenar.</p>
+                <button onclick="darLike(3)">👍 Like</button>
+                <button onclick="darDislike(3)">👎 Dislike</button>
+                <button onclick="responder(3)">Responder</button>
+            </div>
+            <div class="comentario">
+                <p><strong>Usuario:</strong> Luis Herrera</p>
+                <p>Perfectos para caminar todo el día.</p>
+                <button onclick="darLike(4)">👍 Like</button>
+                <button onclick="darDislike(4)">👎 Dislike</button>
+                <button onclick="responder(4)">Responder</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes-satisfechos">
+        <h2>Clientes Satisfechos</h2>
+        <div class="imagenes-clientes">
+            <div class="cliente">
+                <img src="a.jpg" alt="Modelo 1">
+                <p>"Excelentes para deporte"</p>
+            </div>
+            <div class="cliente">
+                <img src="b.jpg" alt="Modelo 2">
+                <p>"Cómodos y muy ligeros"</p>
+            </div>
+            <div class="cliente">
+                <img src="c.jpg" alt="Modelo 3">
+                <p>"Material de alta calidad"</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

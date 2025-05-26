@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Shoes © - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Elite Shoes ©</header>
+    <nav>
+        <a href="index.html"><i>Inicio</i></a>
+        <a href="empresa.html"><i>Empresa</i></a>
+        <a href="tenis.html"><i>Tenis</i></a>
+        <a href="zapatos.html"><i>Zapatos</i></a>
+        <a href="carrito.html"><i>Carrito</i></a>
+        <a href="ubicacion.html"><i>Ubicación</i></a>
+        <a href="comunidad.html"><i>Comunidad Elite Shoes</i></a>
+        <a href="atencion.html"><i>Atención a Clientes</i></a>
+    </nav>
+
+    <section class="login">
+        <h2>Iniciar Sesión</h2>
+        <form onsubmit="guardarUsuario(event)">
+            <input type="text" id="usuario" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </section>
+</body>
+</html>

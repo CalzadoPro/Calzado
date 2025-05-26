@@ -1,0 +1,366 @@
+body {
+    background-color: #ffe1da;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+header {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+nav {
+    background-color: #fff599;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+
+.galeria {
+    margin-top: 20px;
+}
+
+.contenedor-galeria img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagen-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff599;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagen-abajo {
+    display: none;
+    margin-top: 20px;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.empresa {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%;
+}
+
+.contenido h3 {
+    color: black;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.contenido p {
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.catalogo-tenis {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+}
+
+.contenedor-tenis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tenis-item {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+.tenis-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.descripcion {
+    display: none;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tenis-item:hover .descripcion {
+    display: block;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffe1da;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.catalogo-zapatos {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+}
+
+.contenedor-zapatos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.zapatos-item {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+.zapatos-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.descripcion {
+    display: none;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.zapatos-item:hover .descripcion {
+    display: block;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffe1da;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffe1da;
+    color: black;
+}
+
+.carrito {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ticket {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ffe1da;
+    color: black;
+}
+
+.ubicacion {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.comentarios {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+}
+
+.comentario {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.clientes-satisfechos {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffe1da;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.imagenes-clientes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cliente img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cliente img:hover {
+    transform: scale(1.1);
+}
+
+.contacto {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff599;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffe1da;
+    color: black;
+}
+
+.formulario {
+    margin-top: 20px;
+    text-align: center;
+}
+
+

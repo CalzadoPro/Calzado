@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Shoes © - Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Elite Shoes ©</header>
+    <nav>
+        <a href="index.html"><i>Inicio</i></a>
+        <a href="empresa.html"><i>Empresa</i></a>
+        <a href="tenis.html"><i>Tenis</i></a>
+        <a href="zapatos.html"><i>Zapatos</i></a>
+        <a href="ubicacion.html"><i>Ubicación</i></a>
+        <a href="comunidad.html"><i>Comunidad Elite Shoes</i></a>
+        <a href="atencion.html"><i>Atención a Clientes</i></a>
+    </nav>
+
+    <section class="carrito">
+        <h2>Mi Carrito</h2>
+        <div id="lista-carrito"></div>
+        <h3>Total: <span id="total-carrito">0</span> MXN</h3>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="imprimirTicket()">Imprimir Ticket</button>
+    </section>
+
+    <section id="ticket" class="ticket">
+        <h2>Ticket de Compra</h2>
+        <p><strong>Empresa:</strong> Elite Shoes ©</p>
+        <p><strong>Fecha y Hora:</strong> <span id="fecha-hora"></span></p>
+        <p><strong>Usuario:</strong> <span id="usuario-ticket"></span></p>
+        <h3>Productos Comprados:</h3>
+        <div id="lista-ticket"></div>
+        <h3>Total: <span id="total-ticket">0</span> MXN</h3>
+        <p>¡Gracias por su compra!</p>
+<button onclick="imprimirTicketFinal()">Imprimir</button>
+
+    </section>
+</body>
+</html>
